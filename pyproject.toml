@@ -17,12 +17,15 @@ authors = [
   {name = "Mykola Pavlov"},
 ]
 
-[build-system]
-requires = [ "hatchling"]
-build-backend = "hatchling.build"
+[project.urls]
+Repository = "https://github.com/nikolaypavlov/mcp-myip.git"
 
 [project.scripts]
 mcp-myip = "mcp_myip:run_server"
+
+[build-system]
+requires = [ "hatchling"]
+build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "src/mcp_myip/__init__.py"
